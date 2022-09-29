@@ -15,7 +15,7 @@ public class DiceManager {
         else if(d2 == d3)
         {
             if(d2 > d1)
-                dices = addWithBonus(d1, d2, d1, 1);
+                dices = addWithBonus(d1, d2, d3, 1);
             else dices = addEach(d1, d2, d3);
         }
         else if(d1 == d3)

@@ -1,5 +1,5 @@
-public class DiceManager {
-    public int[] compareDices(int d1, int d2, int d3)
+public class DiceManager { //all the Dice comparisons and Total value assignments are made in DiceManager
+    public int[] compareDices(int d1, int d2, int d3) //compares dice values as given in the case
     {
         int[] dices = null;
         if(d1 == d2 && d2 == d3)
@@ -32,15 +32,15 @@ public class DiceManager {
         return dices;
     }
 
-    private int[] addEach(int d1, int d2, int d3)
+    private int[] addEach(int d1, int d2, int d3) // normal case returns total values as dice values
     {
         int[] T = {d1, d2, d3};
 
         return T;
     }
 
-    private int[] addWithBonus(int d1, int d2, int d3, int Senario)
-    {
+    private int[] addWithBonus(int d1, int d2, int d3, int Senario) // if two dices has the same value and this value is bigger than the third dice
+    {                                                               // returns total values with bonuses applied
         int[] T = {d1, d2, d3};
         switch(Senario) {
             case 0:
